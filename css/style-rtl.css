@@ -5,6 +5,7 @@
     --primary:white;
     --colorText:#d2222a;
     --secondary:#0a0a0a;
+    --far_bars:#d2222a;
 }
 
 *{
@@ -95,7 +96,7 @@ i{
 }
 
 .fa-bars{
-   color: var(--colorText);
+   color: var(--far_bars);
 }
 .navbar{
     background-color: var(--primary) !important;
