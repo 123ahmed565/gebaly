@@ -316,7 +316,7 @@ a{
     color: black;
 }
 
-button:hover, a:hover {
+.button-1:hover, a:hover {
     opacity: 0.7;
   }
 /* end meet our team */
