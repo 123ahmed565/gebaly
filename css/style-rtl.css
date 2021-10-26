@@ -50,7 +50,7 @@ a:hover {
 }
 
 ::-webkit-scrollbar-thumb{
-    background:linear-gradient(transparent,var(--primary));
+    background:linear-gradient(transparent,var(--secondary));
     border-radius: 8px;
 }
 
@@ -133,7 +133,7 @@ i{
     transition: .3s all ease-in-out;
 }
 
-button{
+.btn{
     border: none;
     background-color: var(--colorText);
     color: white;
@@ -141,7 +141,7 @@ button{
     padding: 10px 20px;
 }
 
-button:hover{
+.btn:hover{
     border: none;
     background-color: var(--secondary);
     color: white;
@@ -150,3 +150,186 @@ button:hover{
     transition: .5s all ease-in-out;
 }
  /* end navbar canvas */
+
+ /* start slider */
+.carousel-item img{
+    height: 700px
+}
+
+@media (max-width:768px) {
+    .carousel-item img{
+        max-width: 100%;
+        height: 200px;
+    }
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0,.6);
+    z-index: 2;
+}
+/* end slider */
+
+/* start appointment */
+
+.appointment{
+    margin-top: 100px;
+    }
+    
+    
+    h1{
+        font-weight: 800;
+        font-size: 30px;
+        color: black !important;
+    }
+    
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #707070;
+    }
+    
+    .btn {
+        border: none;
+        background-color: var(--colorText);
+        color: white;
+        border-radius: 10px;
+        padding: 10px 20px;
+    }
+    
+    .btn:hover{
+        border: none;
+        background-color: var(--secondary);
+        color: white;
+        border-radius: 10px;
+        padding: 10px 20px;
+        transition: .5s all ease-in-out;
+    }
+    /* end appointment */
+
+
+
+    /* start department */
+.department{
+    margin-top: 70px;
+    background-color: rgb(245, 241, 241);
+}
+
+h2{
+    font-size: 17px;
+    color: var(--colorText);
+    font-weight: 800;
+    line-height: 30px;
+}
+
+h4{
+    font-size: 30px;
+    color: var(--secondary);
+    line-height: 40px;
+    font-weight: 600;
+}
+
+h5{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.swiper {
+    width: 100%;
+    height: 200px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+/* end department */
+
+/* start why choose us */
+
+/* end why choose us */
+
+/* start meet our team */
+.our-team{
+    margin-top: 100px;
+}
+
+@media (max-width:768px) {
+    .our-team img{
+        height: 300px !important;
+    }
+}
+
+.card {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    border: none;
+}
+
+.card img{
+    border-radius: 50%;
+}
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+.button-1{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: var(--colorText);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+  }
+/* end meet our team */
+
+/* start make an appointemnt */
+.make-appointment{
+    margin-top: 100px;
+    background-color: wheat;
+    padding: 30px;
+}
+
+h3{
+    font-size: 25px;
+    
+}
+/* end make an appointment */

@@ -8,6 +8,7 @@
     <meta name="Description" content="Enter your description here" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
     <!-- <link rel="stylesheet" href="./css/style-rtl.css"> -->
     <title>El-Gabaly</title>
@@ -47,7 +48,7 @@
 
 
     <!-- start header -->
-    <nav class="navbar navbar-expand-sm shadow-sm p-3 mb-5 bg-white rounded ">
+    <nav class="navbar navbar-expand-sm shadow-sm bg-white rounded ">
         <div class="container">
             <img src="./images/logo.png" width="80" height="80" alt="">
             <i class="fas fa-bars  fa-2x mt-3 mr-3" data-bs-toggle="offcanvas" data-bs-target="#demo"></i>
@@ -74,19 +75,270 @@
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
-                    <button>Appointment</button>
+                    <button class="btn">Appointment</button>
                 </div>
-            </div>  
+            </div>
         </div>
     </nav>
     <!--end header  -->
 
 
+    <!-- start slider -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="overlay"></div>
+                <img src="./images/slider/slider-1.jpg" class="d-block w-100 img-fluid" alt="Responsive image">
+                <div class="carousel-caption  col-md-8">
+                    <!-- <h5>The Hearth Of The Farm Is The True Center Of Our Universe.</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore nostrum reprehenderit suscipit autem officiis sit, saepe ex libero error ipsam vero quidem rem odio, provident dolorum maiores quas delectus ipsum.</p>
+              <button class="btn btn-success">contact us</button> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="overlay"></div>
+                <img src="./images/slider/slider-2.jpg" class="d-block w-100 img-fluid" alt="Responsive image">
+                <div class="carousel-caption  col-md-8">
+                    <!-- <h5>The Hearth Of The Farm Is The True Center Of Our Universe.</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore nostrum reprehenderit suscipit autem officiis sit, saepe ex libero error ipsam vero quidem rem odio, provident dolorum maiores quas delectus ipsum.</p>
+              <button class="btn btn-success">contact us</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end slider -->
 
+    <!-- start appointment -->
+    <div class="appointment">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-12">
+                    <img src="./images/appointment/appointment.png" class="img-responsive" width="300" height="500" alt="img appointment" loading="lazy">
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h1>Welcome To Gabably. <br> Central Hospital</h1>
+                    <p>Mtandard dummy texr since when an unknown printer took a galley.MediPoint Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam.'s standard dummy texr since when an unknown printer took a galley consetetur.</p>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                <div class="btn-group-vertical" role="group" aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <label class="btn mt-3" for="btncheck1"><i class="fas fa-calendar-week text-white m-2"></i> Request Appointment <i class="fas fa-chevron-right text-white m-2"></i></label>
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn mt-3" for="btncheck2"><i class="fas fa-user-md text-white m-2"></i>Find Doctors<i class="fas fa-chevron-right text-white m-2"></i></label>
+                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                    <label class="btn mt-3" for="btncheck3"><i class="fas fa-map-marker-alt  text-white m-2"></i>Find Location<i class="fas fa-chevron-right text-white m-2"></i></label>
+                    <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                    <label class="btn mt-3" for="btncheck4"><i class="fas fa-phone-alt text-white m-2"></i>Emergency Contact<i class="fas fa-chevron-right text-white m-2"></i></label>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end apointment -->
 
+    <!-- start Departments -->
+    <div class="department">
+        <div class="container">
+            <h2 class="text-center">Departemnts</h2>
+            <h4 class="text-center">Our Medical Services</h4>
+            <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fab fa-chrome fa-3x"></i>
+                            <h5>Dental Care</h5>
+                            <p>here we found every thing you need to want </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fab fa-chrome fa-3x"></i>
+                            <h5>Dental Care</h5>
+                            <p>here we found every thing you need to want</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fab fa-chrome fa-3x"></i>
+                            <h5>Dental Care</h5>
+                            <p>here we found every thing you need to want</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fab fa-chrome fa-3x"></i>
+                            <h5>Dental Care</h5>
+                            <p>here we found every thing you need to want</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fab fa-chrome fa-3x"></i>
+                            <h5>Dental Care</h5>
+                            <p>here we found every thing you need to want</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fab fa-chrome fa-3x"></i>
+                            <h5>Dental Care</h5>
+                            <p>here we found every thing you need to want</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fab fa-chrome fa-3x"></i>
+                            <h5>Dental Care</h5>
+                            <p>here we found every thing you need to want</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fab fa-chrome fa-3x"></i>
+                            <h5>Dental Care</h5>
+                            <p>here we found every thing you need to want</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end Departments -->
+
+    <!-- start why choose us -->
+
+    <!-- end why choose us -->
+    
+    <!-- start meet-our-team -->
+    <div class="our-team">
+        <div class="container">
+            <h2 class="text-center">Meet Our Team</h2>
+            <h4 class="text-center">Specialist Doctors</h4>
+            <div class="row mt-5">
+                <div class="col-md-3 col-sm-12">
+                    <div class="card h-100">
+                        <img src="./images/team/team-1.png" class="p-2" loading="lazy" alt="team-1" style="width:100%" height="260">
+                        <h1 class="mt-2">John Doe</h1>
+                        <p class="title">CEO & Founder, Example</p>
+                        <p>Harvard University</p>
+                        <div class="social-icons">
+                        <a href="#"><i class="fab fa-dribbble m-2"></i></a>
+                        <a href="#"><i class="fab fa-twitter m-2"></i></a>
+                        <a href="#"><i class="fab fa-linkedin m-2"></i></a>
+                        <a href="#"><i class="fab fa-facebook m-2"></i></a>
+                        </div>
+                        <p><button class="button-1">Contact</button></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="card h-100">
+                        <img src="./images/team/team-2.jpg" class="p-2" alt="team-2" loading="lazy" style="width:100%" height="260">
+                        <h1 class="mt-2">John Doe</h1>
+                        <p class="title">CEO & Founder, Example</p>
+                        <p>Harvard University</p>
+                        <div class="social-icons">
+                        <a href="#"><i class="fab fa-dribbble m-2"></i></a>
+                        <a href="#"><i class="fab fa-twitter m-2"></i></a>
+                        <a href="#"><i class="fab fa-linkedin m-2"></i></a>
+                        <a href="#"><i class="fab fa-facebook m-2"></i></a>
+                        </div>
+                        <p><button class="button-1">Contact</button></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="card h-100">
+                        <img src="./images/team/team-3.jpg" class="p-2" alt="team-3" loading="lazy" style="width:100%" height="260">
+                        <h1 class="mt-2">John Doe</h1>
+                        <p class="title">CEO & Founder, Example</p>
+                        <p>Harvard University</p>
+                        <div class="social-icons">
+                        <a href="#"><i class="fab fa-dribbble m-2"></i></a>
+                        <a href="#"><i class="fab fa-twitter m-2"></i></a>
+                        <a href="#"><i class="fab fa-linkedin m-2"></i></a>
+                        <a href="#"><i class="fab fa-facebook m-2"></i></a>
+                        </div>
+                        <p><button class="button-1">Contact</button></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="card h-100">
+                        <img src="./images/team/team-4.jpg" class="p-2" alt="team-4" loading="lazy" style="width:100%" height="260">
+                        <h1 class="mt-2">John Doe</h1>
+                        <p class="title">CEO & Founder, Example</p>
+                        <p>Harvard University</p>
+                        <div class="social-icons">
+                        <a href="#"><i class="fab fa-dribbble m-2"></i></a>
+                        <a href="#"><i class="fab fa-twitter m-2"></i></a>
+                        <a href="#"><i class="fab fa-linkedin m-2"></i></a>
+                        <a href="#"><i class="fab fa-facebook m-2"></i></a>
+                        </div>
+                        <p><button class="button-1">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end meet-our-team -->
+
+    <!-- start make an appointment -->
+    <div class="make-appointment">
+        <div class="container">
+            <h3 class="text-center">Need a Doctor For Check-up?</h3>
+            <h1 class="text-center mt-2">Just Make An Appointment & You're Done!</h1>
+            <button class="btn mx-auto d-block mt-5">Make an Appointment</button>
+        </div>
+    </div>
+    <!-- end make an appointment -->
+
+    <!-- start statistics -->
+    <div class="statistics">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-12">
+                    <i class="fas fa-award fa-4x mb-4"></i>
+                    <h1>22</h1>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <i class="fas fa-users fa-4x mb-4"></i>
+                    <h1>390</h1>
+                    <p>Medical Specialist</p>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <i class="far fa-building fa-4x mb-4"></i>
+                    <h1>559</h1>
+                    <p>Modern Rooms</p>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <i class="far fa-laugh-beam fa-4x mb-4"></i>
+                    <h1>6930</h1>
+                    <p>Happy Patients</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end statistics -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
