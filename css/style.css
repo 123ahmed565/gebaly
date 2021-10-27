@@ -549,3 +549,68 @@ h3{
     border-radius: 50%;
 }
 /* end about-us */
+
+/* start page contact-us */
+
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-container iframe{
+    left:0;
+    top:0;
+    height:80% !important;
+    width:100% !important;
+    position:absolute;
+    border-radius: 5%;
+}
+
+@media (max-width:768px) {
+    .map-container{
+    overflow:hidden; 
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    left: 0;
+} 
+.map-container iframe{
+    left:0;
+    top:0;
+    height:60% !important;
+    width:100% !important;
+    position:absolute;
+    margin-top: 20px !important;
+}
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid var(--colorText); /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+    background-color: #d2222a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: black;
+    transition: .3s all ease-in-out;
+}       
+/* end page contact-us */
