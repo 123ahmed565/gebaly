@@ -483,3 +483,42 @@ h3{
     }
 }
 /* end brands */
+
+
+/* start footer */
+.footer-top {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #212529;
+    margin-top: 50px;
+}
+
+.footer-top a {
+    color: white;
+    font-size: 17px;
+}
+
+.footer-top a:hover {
+    color: var(--colorText);
+}
+
+.footer-bottom {
+    background-color: #212529;
+    border-top: 1px solid gray;
+}
+
+.footer-top .follow-us{
+    cursor: pointer;
+}
+
+.footer-top .follow-us i:hover{
+    color: var(--primary) !important;
+    transition: .2s all ease;
+}
+
+@media (max-width:768px) {
+    .footer-top .footer-center-mobile{
+    text-align: center !important;
+    }
+}
+/* end footer */
