@@ -51,6 +51,15 @@ a:hover {
     text-decoration: none;  
 }
 
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card img:hover{
+    opacity: .7;
+    transition: .3s all ease-in-out;
+}
+
 ::-webkit-scrollbar{
     width: 7px;
 }
@@ -557,24 +566,51 @@ h3{
 /* end testimonials */
 
 /* start latest articles */
-.latest-articles{
+/* .latest-articles{
     margin-top: 100px;
 }
 
 .card-img-top{
     height: 300px !important;
     border-radius: 20px !important;
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.card img:hover{
-    opacity: .7;
-    transition: .3s all ease-in-out;
-}
+} */
 /* end latest articles */
+
+/* start latest articles 2 */
+.latest-articles-2{
+margin-top: 70px;
+}
+
+.container-2 {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+}
+
+.latest-articles-2 img {
+    border-radius: 10%;
+}
+
+.latest-articles-2 .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 40%;
+}
+
+.container-2:hover .overlay {
+    opacity: 1;
+}
+/* end latest articles 2 */
 
 /* start brands */
 .brands{
