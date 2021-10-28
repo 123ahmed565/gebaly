@@ -509,7 +509,9 @@ h3{
     vertical-align: middle;
     width: 100px;
     height: 100px;
+    padding: 3px;
     border-radius: 50%;
+    border: 3px solid var(--colorText);
 }
 
 .swiper-button-next{
