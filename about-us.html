@@ -124,42 +124,46 @@
     <!-- start about us -->
     <div class="about-us">
         <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-12">
-                <h2>about us</h2>
-                <h3><span>Let Us</span> Tell You Our Story</h3>
-                <p class="mt-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt delectus fugiat expedita quidem enim tempora reprehenderit! Hic quibusdam eveniet molestiae, ipsa commodi consectetur mollitia repellat rem, nesciunt vel delectus qui.</p>
-                <button class="btn btn-success">Read More</button>
-                </div>
-                <div class="col-md-4 col-sm-12 mt-4 mt-md-0">
-                <img class="second-img mx-auto d-block" src="./images/team/team-1.png" width="300" height="300" alt="" loading="lazy">
-                </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Who We Are</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Our Mission</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Awards</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Awards</button>
+            </div>
+            
+            <div id="London" class="tabcontent">
+                <h2>Who We Are</h2>
+                <p>El-Gabaly lab welcome to our page</p>
+            </div>
+            
+            <div id="Paris" class="tabcontent">
+                <h2>Our Mission</h2>
+                <p>Our Mission is to produce to you a good services</p> 
+            </div>
+            
+            <div id="Tokyo" class="tabcontent">
+                <h2>Awards</h2>
+                <p>visit our webiste to get more words</p>
             </div>
 
-            <div class="row mt-5">
-                <div class="col-md-3 col-sm-12 shadow-lg text-center">
-                    <div class="btn-group-vertical" role="group" aria-label="Basic checkbox toggle button group">
-                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                        <label class="btn mt-3" for="btncheck1"> Who We Are <i class="fas fa-chevron-right text-white m-2"></i></label>
-                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                        <label class="btn mt-3" for="btncheck2">Our Mission<i class="fas fa-chevron-right text-white m-2"></i></label>
-                        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                        <label class="btn mt-3" for="btncheck3">Awards<i class="fas fa-chevron-right text-white m-2"></i></label>
-                        <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
-                        <label class="btn mt-3 mb-3" for="btncheck4">Expereince<i class="fas fa-chevron-right text-white m-2"></i></label>
+            <div class="row">
+                <div class="col-md-8 col-sm-12 mt-4">
+                    <h2 class="mt-5">about us</h2>
+                    <h3><span>Let Us</span> Tell You Our Story</h3>
+                    <p class="mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt delectus fugiat expedita quidem enim tempora reprehenderit! Hic quibusdam eveniet molestiae, ipsa commodi consectetur mollitia repellat rem, nesciunt vel delectus qui.</p>
+                    <button class="btn btn-success">Read More</button>
                     </div>
-                </div>
-                <div class="col-md-9 col-sm-12 mt-5">
-                    <h3>Let’s Know Short Story About Gabably Centeral</h3>
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-                </div>
+                    <div class="col-md-4 col-sm-12 mt-4">
+                    <img class="second-img mx-auto d-block" src="./images/team/team-1.png" width="300" height="300" alt="" loading="lazy">
+                    </div>
+            </div>
             </div>
         </div>
     </div>
     <!-- end about us -->
 
-   <!-- start meet-our-team -->
-   <div class="our-team">
+<!-- start meet-our-team -->
+<div class="our-team">
     <div class="container">
         <h2 class="text-center">Meet Our Team</h2>
         <h4 class="text-center">Specialist Doctors</h4>

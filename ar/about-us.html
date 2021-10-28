@@ -60,10 +60,10 @@
     <nav class="navbar navbar-expand-sm shadow-sm bg-white rounded ">
         <div class="container">
             <i class="fas fa-bars  fa-2x mt-3 mr-3" data-bs-toggle="offcanvas" data-bs-target="#demo"></i>
-            <a href="../ar/index.html"> <img class="logo-navbar" src="../images/logo.png" width="80" height="80" alt=""> </a>
-            <div class="offcanvas offcanvas-end" id="demo">
+            <a href="../ar/index.html"> <img class="logo-navbar" src="../images/logo.png" width="80" height="80" alt="" loading="lazy"> </a>
+            <div class="offcanvas offcanvas-start" id="demo">
                 <div class="offcanvas-header">
-                    <h1 class="offcanvas-title"><a href="../ar/index.html"> <img src="../images/logo.png" width="80" height="80" alt=""></a></h1>
+                    <h1 class="offcanvas-title"><a href="../ar/index.html"> <img src="../images/logo.png" width="80" height="80" alt="" loading="lazy"></a></h1>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                 </div>
                 <div class="offcanvas-body col justify-content-md-between">
@@ -86,17 +86,20 @@
                         <div class="dropdown mt-2">
                             <button class="dropbtn"><i class="fa fa-language m-1"></i>Lan</button>
                             <div class="dropdown-content">
-                              <a href="../ar/about-us.html">عربى</a>
-                              <a href="../about-us.html">English</a>
-                              <a href="#">French</a>
+                            <a href="../ar/about-us.html">عربى</a>
+                            <a href="../about-us.html">English</a>
+                            <a href="#">French</a>
                             </div>
                         </div>
                     </ul>
                     <!-- <button class="btn mt-3 mt-md-0">Appointment</button> -->
-                     <!-- start modal bootstrap -->
+
+                <!-- start modal bootstrap -->
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
                 Appointment
             </button>
+
+
                 </div>
             </div>
         </div>
@@ -105,7 +108,7 @@
 
     <!--start image background  -->
 <!-- <div class="image-to-other-pages">
-    <img src="../images/slider/slider-2.jpg" class="img-fluid w-100"  alt="">
+    <img src="./images/slider/slider-1.jpg" class="img-fluid w-100"  alt="" loading="lazy">
 </div> -->
 <!-- end image backgroud -->
 
@@ -121,42 +124,46 @@
     <!-- start about us -->
     <div class="about-us">
         <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-12">
-                <h2>about us</h2>
-                <h3><span>Let Us</span> Tell You Our Story</h3>
-                <p class="mt-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt delectus fugiat expedita quidem enim tempora reprehenderit! Hic quibusdam eveniet molestiae, ipsa commodi consectetur mollitia repellat rem, nesciunt vel delectus qui.</p>
-                <button class="btn btn-success">Read More</button>
-                </div>
-                <div class="col-md-4 col-sm-12 mt-4 mt-md-0">
-                <img class="second-img mx-auto d-block" src="../images/team/team-1.png" width="300" height="300" alt="">
-                </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Who We Are</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Our Mission</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Awards</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Awards</button>
+            </div>
+            
+            <div id="London" class="tabcontent">
+                <h2>Who We Are</h2>
+                <p>El-Gabaly lab welcome to our page</p>
+            </div>
+            
+            <div id="Paris" class="tabcontent">
+                <h2>Our Mission</h2>
+                <p>Our Mission is to produce to you a good services</p> 
+            </div>
+            
+            <div id="Tokyo" class="tabcontent">
+                <h2>Awards</h2>
+                <p>visit our webiste to get more words</p>
             </div>
 
             <div class="row">
-                <div class="col-md-3 col-sm-12 shadow-lg text-center">
-                    <div class="btn-group-vertical" role="group" aria-label="Basic checkbox toggle button group">
-                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                        <label class="btn mt-3" for="btncheck1"> Who We Are <i class="fas fa-chevron-right text-white m-2"></i></label>
-                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                        <label class="btn mt-3" for="btncheck2">Our Mission<i class="fas fa-chevron-right text-white m-2"></i></label>
-                        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                        <label class="btn mt-3" for="btncheck3">Awards<i class="fas fa-chevron-right text-white m-2"></i></label>
-                        <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
-                        <label class="btn mt-3 mb-3" for="btncheck4">Expereince<i class="fas fa-chevron-right text-white m-2"></i></label>
+                <div class="col-md-8 col-sm-12 mt-4">
+                    <h2 class="mt-5">about us</h2>
+                    <h3><span>Let Us</span> Tell You Our Story</h3>
+                    <p class="mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt delectus fugiat expedita quidem enim tempora reprehenderit! Hic quibusdam eveniet molestiae, ipsa commodi consectetur mollitia repellat rem, nesciunt vel delectus qui.</p>
+                    <button class="btn btn-success">Read More</button>
                     </div>
-                </div>
-                <div class="col-md-9 col-sm-12 mt-5">
-                    <h3>Let’s Know Short Story About Gabably Centeral</h3>
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-                </div>
+                    <div class="col-md-4 col-sm-12 mt-4">
+                    <img class="second-img mx-auto d-block" src="../images/team/team-1.png" width="300" height="300" alt="" loading="lazy">
+                    </div>
+            </div>
             </div>
         </div>
     </div>
     <!-- end about us -->
 
-   <!-- start meet-our-team -->
-   <div class="our-team">
+<!-- start meet-our-team -->
+<div class="our-team">
     <div class="container">
         <h2 class="text-center">Meet Our Team</h2>
         <h4 class="text-center">Specialist Doctors</h4>
@@ -234,7 +241,7 @@
                     <div class="col follow-us footer-center-mobile">
                         <img class="logo" src="../images/white.png" alt="" width="120" height="120">
                         <h3 class="text-white mt-4">Follow Us</h3>
-                        <div class="col-8 social-icon  mx-auto mx-md-0">
+                        <div class="col-8 social-icon mx-auto mx-md-0">
                             <a href=""><i class="fab fa-facebook"></i></a>
                             <a href=""><i class="fab fa-twitter"></i></a>
                             <a href=""><i class="fab fa-whatsapp"></i></a>
@@ -247,7 +254,7 @@
                         <h5 class="text-white">Brand</h5>
                         <ul class="list-unstyled">
                             <li><a href="../ar/about-us.html">About</a></li>
-                            <li><a href="../ar/medical-tests.html">medical Tests</a></li>
+                            <li><a href="../ar/medical-tests.html">Medical tests</a></li>
                             <li><a href="../ar/blog.html">Blog</a></li>
                             <li><a href="../ar/contact-us.html">Contact</a></li>
                         </ul>
@@ -296,49 +303,50 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="../js/main.js"></script>
-         <!-- start  modal popup fo appointment -->
-         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">New Appointment</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                    <!-- <label for="recipient-name" class="col-form-label">Recipient:</label> -->
-                      <input type="text" class="form-control" id="recipient-name" placeholder="Enter Your Name *">
-                    </div>
-                    <div class="mb-3">
-                        <!-- <label for="recipient-name" class="col-form-label">Recipient:</label> -->
-                        <input type="text" class="form-control" id="recipient-name" placeholder="Enter Your Phone *">
-                    </div>
-                    <div class="mb-3">
-                        <select name="" id="type" class="selects">
-                            <option value="Home Visit" class="options">Home Visit</option>
-                            <option value="appoint for lab" class="options">appoint for lab</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <select name="" id="type" class="selects">
-                            <option value="Home Visit" class="options">Home Visit</option>
-                            <option value="appoint for lab" class="options">appoint for lab</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                    <!-- <label for="message-text" class="col-form-label">Message:</label> -->
-                      <textarea class="form-control" id="message-text" placeholder="Enter Your Notes *"></textarea>
-                    </div>
-                </form>
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn mx-auto d-block py-3 pe-5 ps-5">Send message</button>
-                </div>
+
+     <!-- start  modal popup fo appointment -->
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New Appointment</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                <!-- <label for="recipient-name" class="col-form-label">Recipient:</label> -->
+                  <input type="text" class="form-control" id="recipient-name" placeholder="Enter Your Name *">
+                </div>
+                <div class="mb-3">
+                    <!-- <label for="recipient-name" class="col-form-label">Recipient:</label> -->
+                    <input type="text" class="form-control" id="recipient-name" placeholder="Enter Your Phone *">
+                </div>
+                <div class="mb-3">
+                    <select name="" id="type" class="selects">
+                        <option value="Home Visit" class="options">Home Visit</option>
+                        <option value="appoint for lab" class="options">appoint for lab</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <select name="" id="type" class="selects">
+                        <option value="Home Visit" class="options">Home Visit</option>
+                        <option value="appoint for lab" class="options">appoint for lab</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                <!-- <label for="message-text" class="col-form-label">Message:</label> -->
+                  <textarea class="form-control" id="message-text" placeholder="Enter Your Notes *"></textarea>
+                </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn mx-auto d-block py-3 pe-5 ps-5">Send message</button>
             </div>
         </div>
-    
+        </div>
+    </div>
+
 </body>
 
 </html>
