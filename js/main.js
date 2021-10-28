@@ -112,7 +112,8 @@ var swiper = new Swiper(".mySwiper", {
 
 
 // pop up for modal appointment
-  function modalToggle(){
-    const modal = document.getElementById('modal');
-    modal.classList.toggle('active');
-}
+//   function modalToggle(){
+//     const modal = document.getElementById('modal');
+//     modal.classList.toggle('active');
+// }
+

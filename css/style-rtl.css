@@ -602,6 +602,7 @@ h3{
         padding: 20px;
         text-align: center;
         border-radius: 40%;
+        word-break: break-all;
     }
     
     .container-2:hover .overlay {
@@ -915,81 +916,7 @@ transition: .4s all ease;
 /* end medical tests */
 
 
-/* modal popup for appointment */
-#modal {
-    position: fixed;
-    top: -100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1000;
-    background: #fff;
-    width: 450px;
-    /* padding: 80px 50px 50px; */
-    padding: 5px 0px 17px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
-    transition: 0.5s;
-    visibility: hidden;
-}
-
-@media (max-width:768px) {
-    #modal {
-        position: fixed;
-        top: -100%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1000;
-        background: #fff;
-        width: 360px;
-        /* padding: 80px 50px 50px; */
-        padding: 5px 0px 17px;
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
-        transition: 0.5s;
-        visibility: hidden;
-    }
-}
-
-.active {
-    visibility: visible !important;
-    top: 50% !important;
-}
-
-.content {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.content img {
-    max-width: 80px;
-}
-
-.content h2 {
-    font-size: 24px;
-    font-weight: 500;
-    color: #333;
-    /* margin: 20px 0 10px; */
-}
-
-.content .inputBox {
-    position: relative;
-    width: 100;
-    /* margin-top: 20px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.content .inputBox input,select,textarea {
-    width: 320px;
-    border: 1px solid var(--colorText);
-    padding: 15px;
-    outline: none;
-    font-size: 18px;
-}
-
+/* start modal popup bootstarp */
 .selects{
     cursor: pointer !important;
     color: #707070 !important;
@@ -998,37 +925,22 @@ transition: .4s all ease;
 .options{
     color: black !important;
 }
-
-.content .inputBox input[type="submit"] {
-    max-width: 150px;
-    background: var(--colorText);
-    color: #fff;
-    border: none;
+.btn-close:focus{
+    outline: none;
+    box-shadow: none;
 }
 
-.content .inputBox input[type="submit"]:hover{
-    background-color: var(--secondary);
+input:focus{
+border:1px solid #646464 !important;
+outline: none !important;
+box-shadow:none !important;
 }
 
-.fa-times {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    color: var(--colorText) !important;
-    cursor: pointer;
+.btn-close{
+margin-right: auto !important;
+margin-left: 0 !important;
 }
-
-@media (max-width:768px) {
-    .fa-times {
-        position: absolute;
-        top: 10px;
-        left: 20px;
-        color: var(--colorText) !important;
-        cursor: pointer;
-    }
-}
-
-/* end popup */
+/* end modal popup bootstarp */
 
 
 

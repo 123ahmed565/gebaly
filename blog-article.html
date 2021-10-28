@@ -87,44 +87,17 @@
                         <div class="dropdown mt-2">
                             <button class="dropbtn"><i class="fa fa-language m-1"></i>Lan</button>
                             <div class="dropdown-content">
-                              <a href="./ar/blog-article.html">عربى</a>
-                              <a href="./blog-article.html">English</a>
-                              <a href="#">French</a>
+                            <a href="./ar/blog-article.html">عربى</a>
+                            <a href="./blog-article.html">English</a>
+                            <a href="#">French</a>
                             </div>
                         </div>
                     </ul>
                     <!-- <button class="btn mt-3 mt-md-0">Appointment</button> -->
-                     <!-- modal popup for appointment -->
-                     <a class="btn mt-3 mt-md-0" onclick="modalToggle();">Appointment</a>
-                     <div id="modal">
-             <div class="content">
-                 <h2>Make an apointment</h2>
-                     <div class="inputBox">
-                         <input type="email" placeholder="Enter Your Name *">
-                     </div>
-                     <div class="inputBox">
-                         <input type="tel" placeholder="Enter Your Phone *">
-                     </div>
-                     <div class="inputBox">
-                         <select name="" id="type" class="selects">
-                             <option value="Home Visit" class="options">Home Visit</option>
-                             <option value="appoint for lab" class="options">appoint for lab</option>
-                         </select>
-                     </div>
-                     <div class="inputBox">
-                         <select name="" id="laboratory_type" class="selects">
-                             <option value="" class="options">Home Visit</option>
-                             <option value="" class="options">appoint for lab</option>
-                         </select>
-                     </div>
-                     <div class="inputBox">
-                         <textarea name="note" id="note"  placeholder="Enter Your Notes *"></textarea>
-                     </div>
-                     <div class="inputBox"><input type="submit" value="Send" class="btn"></div>
-             </div>
-             <a class="fas fa-times" onclick="modalToggle();"></a>
-                 </div>
-                 <!-- end moodal popup -->
+                        <!-- start modal bootstrap -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                Appointment
+            </button>
                 </div>
             </div>
         </div>
@@ -330,6 +303,49 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
     <script async src="https://static.addtoany.com/menu/page.js"></script>
+         <!-- start  modal popup fo appointment -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New Appointment</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                    <!-- <label for="recipient-name" class="col-form-label">Recipient:</label> -->
+                      <input type="text" class="form-control" id="recipient-name" placeholder="Enter Your Name *">
+                    </div>
+                    <div class="mb-3">
+                        <!-- <label for="recipient-name" class="col-form-label">Recipient:</label> -->
+                        <input type="text" class="form-control" id="recipient-name" placeholder="Enter Your Phone *">
+                    </div>
+                    <div class="mb-3">
+                        <select name="" id="type" class="selects">
+                            <option value="Home Visit" class="options">Home Visit</option>
+                            <option value="appoint for lab" class="options">appoint for lab</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <select name="" id="type" class="selects">
+                            <option value="Home Visit" class="options">Home Visit</option>
+                            <option value="appoint for lab" class="options">appoint for lab</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                    <!-- <label for="message-text" class="col-form-label">Message:</label> -->
+                      <textarea class="form-control" id="message-text" placeholder="Enter Your Notes *"></textarea>
+                    </div>
+                </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn mx-auto d-block">Send message</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        
 </body>
 
 </html>
