@@ -865,6 +865,11 @@ transition: .4s all ease;
     background-color: white;
 }
 
+.accordion-button::after{
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
 /* end medical tests */
 
 
