@@ -86,15 +86,45 @@
                         <div class="dropdown mt-2">
                             <button class="dropbtn"><i class="fa fa-language m-1"></i>Lan</button>
                             <div class="dropdown-content">
-                              <a href="./ar/index.html">عربى</a>
-                              <a href="./index.html">English</a>
-                              <a href="#">French</a>
+                            <a href="./ar/index.html">عربى</a>
+                            <a href="./index.html">English</a>
+                            <a href="#">French</a>
                             </div>
                         </div>
                     </ul>
-                    <button class="btn mt-3 mt-md-0">Appointment</button>
+                    <!-- <button class="btn mt-3 mt-md-0">Appointment</button> -->
 
-              
+                    <!-- modal popup for appointment -->
+                    <a class="btn mt-3 mt-md-0" onclick="modalToggle();">Appointment</a>
+                <div id="modal">
+        <div class="content">
+            <h2>Make an apointment</h2>
+                <div class="inputBox">
+                    <input type="email" placeholder="Enter Your Name *">
+                </div>
+                <div class="inputBox">
+                    <input type="tel" placeholder="Enter Your Phone *">
+                </div>
+                <div class="inputBox">
+                    <select name="" id="type" class="selects">
+                        <option value="Home Visit" class="options">Home Visit</option>
+                        <option value="appoint for lab" class="options">appoint for lab</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <select name="" id="laboratory_type" class="selects">
+                        <option value="" class="options">Home Visit</option>
+                        <option value="" class="options">appoint for lab</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <textarea name="note" id="note"  placeholder="Enter Your Notes *"></textarea>
+                </div>
+                <div class="inputBox"><input type="submit" value="Send" class="btn"></div>
+        </div>
+        <a class="fas fa-times" onclick="modalToggle();"></a>
+            </div>
+            <!-- end moodal popup -->
 
                 </div>
             </div>
@@ -566,6 +596,8 @@
         </div>
     </div>
     <!-- end brands -->
+
+    
 
     <!-- start footer -->
     <footer>

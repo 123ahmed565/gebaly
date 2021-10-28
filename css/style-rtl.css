@@ -873,4 +873,120 @@ transition: .4s all ease;
 /* end medical tests */
 
 
+/* modal popup for appointment */
+#modal {
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: #fff;
+    width: 450px;
+    /* padding: 80px 50px 50px; */
+    padding: 5px 0px 17px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+@media (max-width:768px) {
+    #modal {
+        position: fixed;
+        top: -100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        background: #fff;
+        width: 360px;
+        /* padding: 80px 50px 50px; */
+        padding: 5px 0px 17px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+        transition: 0.5s;
+        visibility: hidden;
+    }
+}
+
+.active {
+    visibility: visible !important;
+    top: 50% !important;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content img {
+    max-width: 80px;
+}
+
+.content h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    /* margin: 20px 0 10px; */
+}
+
+.content .inputBox {
+    position: relative;
+    width: 100;
+    /* margin-top: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .inputBox input,select,textarea {
+    width: 320px;
+    border: 1px solid var(--colorText);
+    padding: 15px;
+    outline: none;
+    font-size: 18px;
+}
+
+.selects{
+    cursor: pointer !important;
+    color: #707070 !important;
+}
+
+.options{
+    color: black !important;
+}
+
+.content .inputBox input[type="submit"] {
+    max-width: 150px;
+    background: var(--colorText);
+    color: #fff;
+    border: none;
+}
+
+.content .inputBox input[type="submit"]:hover{
+    background-color: var(--secondary);
+}
+
+.fa-times {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: var(--colorText) !important;
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .fa-times {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        color: var(--colorText) !important;
+        cursor: pointer;
+    }
+}
+
+/* end popup */
+
+
 
