@@ -200,6 +200,10 @@ i{
     .navbar-expand-sm .navbar-nav .nav-link{
         color: black;
     }
+    .navbar .logo-navbar{
+        height: 50px;
+        width: 50px;
+    }
 }
 
 .offcanvas {
