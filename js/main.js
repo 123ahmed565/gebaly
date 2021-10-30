@@ -16,13 +16,9 @@ scrollBtn.addEventListener("click",()=>{
 document.addEventListener("scroll",(e)=>{
 if(document.documentElement.scrollTop <=100){
   scrollBtn.style.display="none";
-  //appear the upperbar
-  upperbar.style.display="block";
 }else
 {
   scrollBtn.style.display="block";
-  //hide the upperbar
-  upperbar.style.display="none";
 }
 });
 
@@ -54,11 +50,6 @@ var swiper = new Swiper(".mySwiper", {
         
     }
   });
-
-
-
-
-  // navtabs why choose us
   
 
   // testimonials
@@ -126,4 +117,29 @@ function openCity(evt, cityName) {
 }
 
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+// document.getElementById("defaultOpen").click();
+
+
+// statistics laod number when scroll
+
+const counters = document.querySelectorAll('.counter');
+
+window.addEventListener('scroll',()=>{
+  counters.forEach(counter => {
+    counter.innerText = '0';
+    
+    const updateCounter = ()=>{
+      const target=counter.getAttribute('data-target');
+      const c = +counter.innerText;
+    
+      const increment =  target /500;
+      if(c <target){
+        counter.innerText=  `${Math.ceil(c+increment)}`;
+        setTimeout(updateCounter, 1);
+      }else{
+        counter.innerText=target;
+      }
+    } ;
+    updateCounter();
+    });
+})
