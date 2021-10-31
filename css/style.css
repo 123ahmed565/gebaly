@@ -358,6 +358,11 @@ p{
     padding: 10px 20px;
     transition: .5s all ease-in-out;
 }
+
+.btn-group-vertical a{
+font-size: 17px;
+color: white;
+}
 /* end appointment */
 
 /* start department */
