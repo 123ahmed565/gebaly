@@ -902,7 +902,7 @@ transition: .4s all ease;
 
 .accordion-button.collapsed:hover{
     background-color: var(--colorText);
-    color: white;
+    /* color: white; */
 }
 
 .accordion-button.collapsed:focus{
@@ -922,6 +922,13 @@ transition: .4s all ease;
     margin-right: auto !important;
     margin-left: 0 !important;
 }
+
+.accordion-flush .accordion-item .accordion-button{
+    background-color: wheat !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
 
 /* end medical tests */
 
