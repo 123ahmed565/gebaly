@@ -117,13 +117,11 @@ function openCity(evt, cityName) {
 }
 
 // Get the element with id="defaultOpen" and click on it
-// document.getElementById("defaultOpen").click();
+document.getElementById("defaultOpen").click();
 
 
 // statistics laod number when scroll
-
 const counters = document.querySelectorAll('.counter');
-
 window.addEventListener('scroll',()=>{
   counters.forEach(counter => {
     counter.innerText = '0';
