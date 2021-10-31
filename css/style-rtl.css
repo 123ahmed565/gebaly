@@ -296,7 +296,7 @@ i{
 
  /* start slider */
 .carousel-item img{
-    height: 700px
+    height: 500px
 }
 
 @media (max-width:768px) {
