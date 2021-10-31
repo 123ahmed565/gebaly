@@ -21,7 +21,7 @@ html{
 
 body{
     font-family: 'Roboto', sans-serif;
-    height: 100Vh;
+    /* height: 100Vh; */
     overflow-x: hidden;
 }
 
