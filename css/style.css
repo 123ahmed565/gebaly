@@ -923,6 +923,10 @@ transition: .4s all ease;
     background-color: white;
 }
 
+.accordion-flush .accordion-item .accordion-button{
+    background-color: yellow !important;
+}
+
 /* end medical tests */
 
 
