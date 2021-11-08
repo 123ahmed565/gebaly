@@ -7,7 +7,7 @@ window.onload = function () {
 // to top
 const scrollBtn= document.querySelector(".scroll-to-top");
 const upperbar =document.querySelector('.upperbar');
-
+scrollBtn.style.display="none";
 scrollBtn.addEventListener("click",()=>{
   document.body.scrollTop=0;
   document.documentElement.scrollTop=0;
@@ -99,7 +99,16 @@ var swiper = new Swiper(".mySwiper", {
     }
   });
 
-
+  // const started=false;
+  // const section=document.querySelector(".statistics")
+  // window.onscroll = function () {
+  //   if (window.scrollY >= section.offsetTop) {
+  //     if (!started) {
+  //       nums.forEach((counter) => counters(counter));
+  //     }
+  //     started = true;
+  //   }
+  // };
 
 // statistics laod number when scroll
 const counters = document.querySelectorAll('.counter');
