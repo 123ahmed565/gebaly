@@ -200,6 +200,7 @@ i{
 @media (min-width:768px) {
     .navbar-expand-sm .navbar-nav .nav-link{
         color: white;
+        white-space: nowrap !important;
     }
 }
 
@@ -345,6 +346,7 @@ i{
         color: white;
         border-radius: 10px;
         padding: 10px 20px;
+        white-space: nowrap !important;
     }
     
     .btn:hover{
