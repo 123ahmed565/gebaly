@@ -99,17 +99,6 @@ var swiper = new Swiper(".mySwiper", {
     }
   });
 
-  // const started=false;
-  // const section=document.querySelector(".statistics")
-  // window.onscroll = function () {
-  //   if (window.scrollY >= section.offsetTop) {
-  //     if (!started) {
-  //       nums.forEach((counter) => counters(counter));
-  //     }
-  //     started = true;
-  //   }
-  // };
-
 // statistics laod number when scroll
 // const counters = document.querySelectorAll('.counter');
 // window.addEventListener('scroll',()=>{
@@ -133,7 +122,7 @@ var swiper = new Swiper(".mySwiper", {
 // })
 
 
-// Put this script in header or above select element
+// this for form modal popup
 function check(elem) {
   // use one of possible conditions
   // if (elem.value == 'Other')
@@ -143,4 +132,3 @@ function check(elem) {
       document.getElementById("other-div").style.display = 'none';
   }
 }
-

@@ -985,3 +985,10 @@ box-shadow:none !important;
     box-shadow: none;
 }
 /* end modal popup bootstarp */
+
+
+/* .modal-open .select2-container--open { 
+    z-index: 999999 !important; width:100% !important; 
+color: black;
+
+} */
